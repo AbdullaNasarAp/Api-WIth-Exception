@@ -115,6 +115,7 @@ class ListTileOfData extends StatelessWidget {
   final String last;
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.all(
         8.0,
@@ -142,7 +143,7 @@ class ListTileOfData extends StatelessWidget {
                         title,
                         style: const TextStyle(
                           color: Colors.black,
-                          fontSize: 25,
+                          fontSize: 15,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -160,7 +161,7 @@ class ListTileOfData extends StatelessWidget {
                   ),
                   Text(
                     email1,
-                    style: const TextStyle(color: Colors.black),
+                    style: const TextStyle(color: Colors.black, fontSize: 10),
                   ),
                 ],
               ),
